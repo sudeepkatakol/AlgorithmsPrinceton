@@ -125,9 +125,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 			iteratingIndex=0;
 		}
 		
+		//Knuth shuffle
 		private void randomize() {
 			for(int i=0; i<n; i++) {
-				int swapIndex=StdRandom.uniform(size);
+				int swapIndex=StdRandom.uniform(i+1);
 				Item temp= randomQueue[i];
 				randomQueue[i]=randomQueue[swapIndex];
 				randomQueue[swapIndex]=temp;
