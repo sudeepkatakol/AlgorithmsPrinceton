@@ -12,7 +12,8 @@ a basic iterator for the deque.
 Performance:
 The deque implementation supports each deque operation (including construction)
 in constant worst-case time and use space proportional to the number of items 
-currently in the deque. 
+currently in the deque.
+(A deque containing n items uses atmost 48n + 192 bytes of memory) 
 Additionally, the iterator implementation supports each operation 
 (including construction) in constant worst-case time.
 */
